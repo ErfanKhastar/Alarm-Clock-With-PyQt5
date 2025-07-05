@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #A1D6E2;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="pic_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>121</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>clock_15171782.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="alarm_label">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Alarm</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hours_label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>80</y>
+      <width>37</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Hours</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="minutes_label">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>80</y>
+      <width>49</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Minutes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="period_label">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>80</y>
+      <width>39</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Period</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="hours_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>100</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox:on {
+	border: 2px solid #1995AD;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #1995AD;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Alarm_Clock/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="minutes_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>100</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox:on {
+	border: 2px solid #1995AD;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #1995AD;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Alarm_Clock/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="period_comboBox">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>100</y>
+      <width>81</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1.5px solid;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+QComboBox::drop-down {
+	border: 0px;
+}
+
+QComboBox:on {
+	border: 2px solid #1995AD;
+}
+
+QComboBox QListView {
+	font-size: 12px;
+	border: 2px solid #1995AD;
+	padding: 5px;
+	background-color: #fff;
+	outline: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(D:/Python/Projects/GitHub_PR/Alarm_Clock/down-arrow-8-128.png);
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="activate_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: #F1F1F2;
+	border: 0.5px solid;
+	border-radius: 15px;
+}
+
+QPushButton:hover {
+	background: #1995AD;
+	border: 1px solid ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Activate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deactivate_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>150</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background: #F1F1F2;
+	border: 0.5px solid;
+	border-radius: 15px;
+}
+
+QPushButton:hover {
+	background: #1995AD;
+	border: 1px solid ;
+}</string>
+    </property>
+    <property name="text">
+     <string>Deactivate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="countdown_label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Variable Text Semibold</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>464</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
